@@ -1,0 +1,15 @@
+{
+    "name": "rizvane/jeu_poo",
+    "authors": [
+        {
+            "name": "Rizvane Mougamadou",
+            "email": "Rizvane.mougamadou@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "Jeu_Poo/"
+        }
+    }
+}
