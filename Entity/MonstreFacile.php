@@ -48,6 +48,11 @@ class MonstreFacile extends Monstre
 
     public function Attaque(Joueur $joueur)
     {
-
+        $lanceMonstre = $this->LanceLeDe();
+        $lanceJoueur = $joueur->LanceLeDe();
+        if($lanceMonstre>$lanceJoueur)
+            $joueur->SubitDegats(self::DEGATS);
     }
+
+
 }

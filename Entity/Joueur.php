@@ -7,12 +7,13 @@
  */
 
 namespace Entity;
+
 class Joueur
 {
     private $de;
     private $pointDeVie;
 
-    public function __construct($de, $pointDeVie)
+    public function __construct($pointDeVie)
     {
         $this->de = new De();
         $this->pointDeVie = $pointDeVie;
@@ -25,7 +26,11 @@ class Joueur
 
     public function Attaque(MonstreFacile $monstre)
     {
-
+        $lanceJoueur = $this->LanceLeDe();
+        $lanceMonstre = $monstre->LanceLeDe();
+        if($lanceJoueur >= $lanceMonstre){
+            $monstre->subitDegats();
+        }
     }
 
     public function LanceLeDe()

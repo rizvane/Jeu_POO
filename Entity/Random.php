@@ -12,17 +12,19 @@ class Random
 {
     private $valeur;
 
-    public function __construct()
+
+    public function __construct(int $valeur_min, int $valeur_max)
     {
-        $this->valeur = rand(1,6);
+        $this->valeur = rand($valeur_min,$valeur_max);
     }
 
     /**
      * @return int
      */
-    public function getValeur():int
+    public function getValue():int
     {
         return $this->valeur;
     }
+
 
 }

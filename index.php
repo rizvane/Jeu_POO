@@ -7,7 +7,18 @@
  */
 require 'vendor/autoload.php';
 
-use Entity\Random;
+use Entity\Game;
 
-$r = new Random();
-echo $r->getValeur();
+
+
+
+$game = new Game();
+$game->LanceJeu();
+
+
+
+
+?>
+
+
+
